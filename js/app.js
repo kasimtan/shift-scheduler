@@ -22,7 +22,7 @@ angular.module('SchedulerApp', ['ngRoute'])
  * Retrieve employees
  */
 .factory('employees', function($http) {
-  return $http.get('/data/employees.json')
+  return $http.get('data/employees.json')
     .success(function(data) {
       return data;
     })
@@ -35,7 +35,7 @@ angular.module('SchedulerApp', ['ngRoute'])
  * Retrieve rules
  */
 .factory('rules', function($http) {
-  return $http.get('/data/rule-definitions.json')
+  return $http.get('data/rule-definitions.json')
     .success(function(data) {
       return data;
     })
@@ -48,7 +48,7 @@ angular.module('SchedulerApp', ['ngRoute'])
  * Retrieve shift rules
  */
 .factory('shiftRules', function($http) {
-  return $http.get('/data/shift-rules.json')
+  return $http.get('data/shift-rules.json')
     .success(function(data) {
       return data;
     })
@@ -61,7 +61,7 @@ angular.module('SchedulerApp', ['ngRoute'])
  * Retrieve time-off requests
  */
 .factory('timeOff', function($http) {
-  return $http.get('/data/time-off-requests.json')
+  return $http.get('data/time-off-requests.json')
     .success(function(data) {
       return data;
     })
