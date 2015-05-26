@@ -1,0 +1,23 @@
+<h3 class="name">
+  <a class="btn btn-warning pull-left" href="/">&laquo; Back</a>
+  <button class="btn btn-info pull-right" data-toggle="button" ng-click="switchSchedule()">Consider time off</button>
+  {{employee.name}}
+</h3>
+
+<div class="calendar">
+  <div ng-show="isConsiderTimeOff">
+    <h3>Time Off Schedule:</h3><hr/>
+    <p ng-repeat="timeOff in timeOffs">
+      <span class="week">Week {{timeOff.week}}: </span>
+      <span class="schedule">{{timeOff.days}}</span>
+    </p>
+    <p ng-show="timeOffs.length == 0">
+      <span class="week">N/A</span>
+    </p><hr/>
+  </div>
+  <h3>Shift Schedule:</h3><hr/>
+  <p ng-repeat="schedule in schedules">
+    <span class="week">Week {{schedule.week}}: </span>
+    <span class="schedule">{{schedule.days}}</span>
+  </p>
+</div>

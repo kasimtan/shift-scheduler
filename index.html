@@ -1,1 +1,27 @@
-My Page
+<!doctype html>
+<html>
+  <head>
+    <title>Shift Scheduler</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js/vendor/angular-route.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+  </head>
+  <body ng-app="SchedulerApp">
+    <div class="header">
+      <div class="container">
+        <h1>June 2015 Shift Scheduler</h1>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+          <div ng-view></div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

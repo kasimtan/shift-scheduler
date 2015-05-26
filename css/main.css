@@ -1,0 +1,41 @@
+.header {
+    color: #ffffff;
+    background: #ff08aa;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.main {
+    margin: 40px 0;
+}
+
+.employee {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 18px;
+    margin: 0 0 8px;
+    padding: 20px 2%;
+}
+
+.name,
+.week {
+    font-weight: bold;
+}
+
+.name::before {
+    content: '\00a0\00a0';
+}
+
+.employee:hover {
+    background: #fcfcfc;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.calendar {
+    font-size: 18px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    padding: 20px 5% 50px;
+}
