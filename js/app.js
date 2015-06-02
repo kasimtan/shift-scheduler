@@ -114,6 +114,7 @@ angular.module('SchedulerApp', ['ngRoute'])
         }
         else {
           $.merge(employeeTimeOff[week][employeeId], timeOff.days);
+          timeOff.days = [];
         }
       }
     }
